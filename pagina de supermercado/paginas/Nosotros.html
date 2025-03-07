@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MaxiHome - Nosotros</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <script src="../js/login.js"></script>
+    <script src="../js/script.js"></script>
+    <header>
+      <div class="header-container">
+        <a href="../index.html">
+          <img src="../imagenes/logomaxi.png" alt="Logo de MaxiHome" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li>
+              <a href="../paginas/Nosotros.html" class="active">Nosotros</a>
+            </li>
+            <li><a href="../paginas/Productos.html">Productos</a></li>
+            <li><a href="../paginas/Servicios.html">Servicios</a></li>
+            <li><a href="../paginas/Contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <!-- Contenedor de autenticación -->
+        <div id="authContainer">
+          <span id="userInfo"></span>
+          <a id="loginLink" href="../paginas/login.html">Iniciar Sesión</a>
+          <button id="logoutBtn" onclick="logout()" style="display: none">
+            Cerrar sesión
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Sección de Introducción -->
+      <section id="introduccion-nosotros">
+        <h1>Sobre Nosotros</h1>
+        <p>
+          En MaxiHome creemos en la importancia de construir relaciones
+          duraderas con nuestros clientes y colaboradores. Desde nuestros
+          inicios, nos hemos comprometido a ofrecer productos de alta calidad y
+          un servicio excepcional que marque la diferencia en cada experiencia
+          de compra.
+        </p>
+        <p>
+          Con una trayectoria de más de 25 años, nuestra filosofía se basa en la
+          transparencia, la innovación y el compromiso. Nos esforzamos por
+          mantener un ambiente acogedor y profesional, donde cada detalle es
+          pensado para que sientas la confianza y seguridad de formar parte de
+          nuestra gran familia.
+        </p>
+      </section>
+
+      <!-- Sección de Historia -->
+      <section id="historia">
+        <h2>Nuestra Historia</h2>
+        <p>
+          Fundado en 1998, MaxiHome inició como un pequeño almacén local con la
+          visión de transformar el mercado mayorista. Con el tiempo, gracias a
+          la dedicación y esfuerzo de nuestro equipo, hemos evolucionado hasta
+          convertirnos en un referente en el sector.
+        </p>
+        <p>
+          Cada etapa de nuestra historia ha sido un paso hacia la innovación y
+          la excelencia. Hoy, nuestra experiencia y legado nos permiten ofrecer
+          soluciones integrales que se adaptan a las necesidades de un mercado
+          en constante cambio.
+        </p>
+      </section>
+
+      <!-- Sección de Misión, Visión y Valores -->
+      <section id="mision-vision-valores">
+        <h2>Misión, Visión y Valores</h2>
+        <div class="mvv">
+          <div class="mision">
+            <h3>Misión</h3>
+            <p>
+              Brindar a nuestros clientes productos de alta calidad a precios
+              competitivos, creando un entorno de compra moderno, seguro y
+              eficiente, y promoviendo prácticas comerciales éticas y
+              sostenibles.
+            </p>
+          </div>
+          <div class="vision">
+            <h3>Visión</h3>
+            <p>
+              Ser el supermercado mayorista líder, reconocido por nuestra
+              innovación, excelencia en el servicio y compromiso con el
+              bienestar de la comunidad y el medio ambiente.
+            </p>
+          </div>
+          <div class="valores">
+            <h3>Valores</h3>
+            <ul>
+              <li>Integridad y Transparencia</li>
+              <li>Innovación Constante</li>
+              <li>Excelencia en el Servicio</li>
+              <li>Compromiso con el Cliente</li>
+              <li>Sostenibilidad</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de Nuestro Equipo y Local -->
+      <section id="equipo">
+        <h2>Conoce a Nuestro Equipo</h2>
+        <p>
+          Nuestro equipo está compuesto por profesionales comprometidos que
+          trabajan día a día para garantizar una experiencia de compra única y
+          agradable. Cada integrante aporta su experiencia y pasión para hacer
+          de Cotsco Wholesale un espacio en el que la calidad y el servicio se
+          unen.
+        </p>
+        <p>
+          Además, nuestras instalaciones modernas y bien equipadas reflejan
+          nuestro compromiso con la innovación y la eficiencia. Te invitamos a
+          conocer un poco más sobre quienes hacen posible nuestra visión y a
+          descubrir el ambiente que distingue a nuestro supermercado.
+        </p>
+        <div class="galeria-equipo">
+          <img src="../imagenes/equipo1.jpg" alt="Equipo Cotsco MaxiHome" />
+          <img
+            src="../imagenes/equipo2.jpg"
+            alt="Reunión de equipo en MaxiHome"
+          />
+          <img
+            src="../imagenes/equipo3.jpg"
+            alt="Instalaciones modernas de MaxiHome"
+          />
+        </div>
+      </section>
+
+      <!-- Sección de Video Institucional -->
+      <section id="video-nosotros">
+        <h2>Video Institucional</h2>
+        <p>
+          Te invitamos a conocer más acerca de nuestra historia, nuestros
+          valores y el compromiso que tenemos con cada uno de nuestros clientes
+          a través de este video institucional.
+        </p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/yP2NvgKGX_c?si=s5QZ6-u_4OI8J1DL"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <!-- Sección de Audio de Fondo -->
+      <section id="audio-nosotros">
+        <audio id="bgAudioNosotros" loop>
+          <source src="../audio/GESHUOU(MP3_160K).mp3" type="audio/mpeg" />
+          Tu navegador no soporta audio.
+        </audio>
+        <button onclick="toggleAudioNosotros()">
+          Activar/Desactivar Música
+        </button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <section class="redes">
+          <a href="https://www.facebook.com/cotsco" target="_blank">
+            <i class="fab fa-facebook-f"></i> Facebook
+          </a>
+          <a href="https://www.instagram.com/cotsco" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://twitter.com/cotsco" target="_blank">
+            <i class="fab fa-twitter"></i> Twitter
+          </a>
+        </section>
+        <section class="informacion">
+          <p>Tel: (123) 456-7890</p>
+          <p>Email: contacto@MaxiHome.com</p>
+          <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+        </section>
+        <section class="politicas">
+          <a href="/paginas/privacidad.html">Políticas de Privacidad</a>
+          <a href="/paginas/terminos.html">Términos de Uso</a>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

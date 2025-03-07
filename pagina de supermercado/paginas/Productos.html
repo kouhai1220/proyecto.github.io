@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MaxiHome - Productos</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <style>
+      /* Estilos básicos para el botón flotante */
+      #btnScrollToTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 15px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: none;
+        z-index: 1000;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="../js/login.js"></script>
+    <script src="../js/script.js"></script>
+    <header>
+      <div class="header-container">
+        <a href="../index.html">
+          <img src="../imagenes/logomaxi.png" alt="Logo de MaxiHome" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../paginas/Nosotros.html">Nosotros</a></li>
+            <li><a href="../paginas/Productos.html"class="active">Productos</a></li>
+            <li><a href="../paginas/Servicios.html">Servicios</a></li>
+            <li><a href="../paginas/Contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <!-- Contenedor de autenticación -->
+        <div id="authContainer">
+          <span id="userInfo"></span>
+          <a id="loginLink" href="../paginas/login.html">Iniciar Sesión</a>
+          <button id="logoutBtn" onclick="logout()" style="display: none">
+            Cerrar sesión
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="productos-intro">
+        <h1>Nuestros Productos</h1>
+        <p>
+          En MaxiHome te ofrecemos una amplia variedad de productos de alta
+          calidad, divididos en categorías para facilitar tu búsqueda. Utiliza
+          los botones a continuación para navegar rápidamente a la sección que
+          te interese.
+        </p>
+        <div class="categoria-nav">
+          <a href="#Pintura"><button type="button">Pintura</button></a>
+          <a href="#Mayolica"><button type="button">Mayolica</button></a>
+          <a href="#Limpieza"><button type="button">Limpieza</button></a>
+          <a href="#Muebles"><button type="button">Muebles</button></a>
+        </div>
+      </section>
+
+      <section id="Pintura">
+        <h2>Pintura</h2>
+        <p>
+          Descubre nuestra selección de pinturas de alta calidad, ideales para
+          dar vida a tus espacios. Desde tonos vibrantes hasta acabados
+          elegantes, encuentra la opción perfecta para cada rincón de tu hogar u
+          oficina.
+        </p>
+        <div class="product-container">
+          <div class="product-card">
+            <img src="../imagenes/3.1.jpeg" alt="TEKNO" />
+            <h3>Cera-TEKNO</h3>
+            <p class="precio">S/. 35.00</p>
+            <p>Cera Para Piso Crema Floral 3.78 L</p>
+          </div>
+          <div class="product-card">
+            <img src="../imagenes/3.2.png" alt="CPP-DURALATEX" />
+            <h3>CPP-DURALATEX</h3>
+            <p class="precio">S/. 40.00</p>
+            <p>Pintura exclusiva para exteriores y mayor duración.</p>
+          </div>
+          <div class="product-card">
+            <img src="../imagenes/3.jpeg" alt="VHARBOR-VINILO" />
+            <h3>VHARBOR-VINILO</h3>
+            <p class="precio">S/. 25.00</p>
+            <p>Producto económico y duradero</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="Mayolica">
+        <h2>Mayolica</h2>
+        <p>
+          Renueva tus espacios con nuestra colección de mayólicas de alta
+          calidad. Diseños modernos y clásicos que combinan resistencia y
+          estilo, ideales para cocinas, baños y cualquier ambiente que desees
+          transformar.
+        </p>
+        <div class="product-container">
+          <div class="product-card">
+            <img src="../imagenes/mayo1.png" alt="Mayolica" />
+            <h3>Mayolica-Celima</h3>
+            <p class="precio">S/. 17.00 m2</p>
+            <p>
+              WOOD PANEL ROBLE 58X118 <br />
+              Código de producto : 110017892
+            </p>
+          </div>
+          <div class="product-card">
+            <img src="../imagenes/mayo2.png" alt="Mayolica" />
+            <h3>Mayolica-Celima</h3>
+            <p class="precio">S/. 18.99 m2</p>
+            <p>
+              WOOD PANEL CAOBA 58X118 <br />
+              Código de producto : 110017896
+            </p>
+          </div>
+          <div class="product-card">
+            <img src="../imagenes/mayo3.png" alt="Mayolica" />
+            <h3>Mayolica-Celima</h3>
+            <p class="precio">S/. 20.00 m2</p>
+            <p>WOOD PANEL NUEZ 58X118 <br />Código de producto : 110017894</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="Limpieza">
+        <h2>Limpieza</h2>
+        <p>
+          Mantén tus espacios impecables con nuestra selección de productos de
+          limpieza. Soluciones eficaces para cada superficie, garantizando
+          frescura, higiene y protección en tu hogar o negocio.
+        </p>
+        <div class="product-container">
+          <div class="product-card">
+            <img src="../imagenes/lim1.jpg" alt="Mr Musculo" />
+            <h3>Mr Musculo-Desengrasante</h3>
+            <p class="precio">S/. 8.00</p>
+            <p>Desengrasante Mr Musculo Advance 500Ml</p>
+          </div>
+          <div class="product-card">
+            <img src="../imagenes/lim2.jpeg" alt="Binner" />
+            <h3>Binner</h3>
+            <p class="precio">S/. 25.99</p>
+            <p>Shampoo Concentrado de Alfombras + Cortinas 1L</p>
+          </div>
+          <div class="product-card">
+            <img src="../imagenes/lim3.jpeg" alt="KAZVEL" />
+            <h3>Limpia Vidrio Generac</h3>
+            <p class="precio">S/. 45.00</p>
+            <p>LIMPIA VIDRIOS KAZVEL X4 UND POR GALÓN 3.8 LTS</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="Muebles">
+        <h2>Muebles</h2>
+        <p>
+          Descubre nuestra colección de muebles diseñados para combinar estilo,
+          comodidad y funcionalidad. Desde piezas modernas hasta clásicas,
+          encuentra la opción perfecta para transformar tus espacios con
+          elegancia y calidad.
+        </p>
+        <div class="product-container">
+          <div class="product-card">
+            <img src="../imagenes/mue1.1.jpg" alt="Silla-BONNO" />
+            <br /><br /><br /><br />
+            <h3>Silla de escritorio</h3>
+            <p class="precio">S/. 90.00</p>
+            <p>Silla Ergonomica Delphi Synchro Negro Con Cabecero Bonno</p>
+          </div>
+          <div class="product-card">
+            <img src="../imagenes/mue2.1.jpg" alt="Muebles" />
+            <br /><br /><br /><br /><br /><br />
+            <h3>Sofa cama</h3>
+            <p class="precio">S/. 268.00</p>
+            <p>
+              Sofá Cama con Cojines Decorativos Teki <br />JUST HOME COLLECTION
+            </p>
+          </div>
+          <div class="product-card">
+            <img src="../imagenes/mue3.png" alt="Muebles" />
+            <h3>Juego comerdor</h3>
+            <p class="precio">S/. 600.00</p>
+            <p>
+              Juego de Comedor 6 Sillas Dartagnan Negro
+              <br />JUST HOME COLLECTION
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Botón Flotante para volver al inicio -->
+    <button
+      id="btnScrollToTop"
+      onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+    >
+      ↑ Volver Arriba
+    </button>
+
+    <footer>
+      <div class="footer-content">
+        <section class="redes">
+          <a href="https://www.facebook.com/cotsco" target="_blank">
+            <i class="fab fa-facebook-f"></i> Facebook
+          </a>
+          <a href="https://www.instagram.com/cotsco" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://twitter.com/cotsco" target="_blank">
+            <i class="fab fa-twitter"></i> Twitter
+          </a>
+        </section>
+        <section class="informacion">
+          <p>Tel: (123) 456-7890</p>
+          <p>Email: contacto@MaxiHome.com</p>
+          <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+        </section>
+        <section class="politicas">
+          <a href="/paginas/privacidad.html">Políticas de Privacidad</a>
+          <a href="/paginas/terminos.html">Términos de Uso</a>
+        </section>
+      </div>
+    </footer>
+
+    <script>
+      // Mostrar botón flotante cuando se baja de la mitad de la página
+      window.addEventListener("scroll", function () {
+        const btnScroll = document.getElementById("btnScrollToTop");
+        if (window.pageYOffset > window.innerHeight / 2) {
+          btnScroll.style.display = "block";
+        } else {
+          btnScroll.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

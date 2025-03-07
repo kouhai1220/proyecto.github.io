@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MaxiHome - Inicio</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <script src="../js/login.js"></script>
+    <script src="../js/script.js"></script>
+    <header>
+      <div class="header-container">
+        <a href="index.html">
+          <img
+            src="../imagenes/logomaxi.png"
+            alt="Logo de MaxiHome"
+          />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html"class="active">Inicio</a></li>
+            <li>
+              <a href="../Nosotros.html"
+                >Nosotros</a
+              >
+            </li>
+            <li>
+              <a href="../Productos.html"
+                >Productos</a
+              >
+            </li>
+            <li>
+              <a href="../Servicios.html"
+                >Servicios</a
+              >
+            </li>
+            <li>
+              <a href="../Contacto.html"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- Contenedor de autenticación -->
+        <div id="authContainer">
+          <span id="userInfo"></span>
+          <a id="loginLink" href="../login.html"
+            >Iniciar Sesión</a
+          >
+          <button id="logoutBtn" onclick="logout()" style="display: none">
+            Cerrar sesión
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Imagen Grande (Hero Image) -->
+    <section id="hero">
+      <img
+        src="imagenes/ssssa.jpg"
+        alt="Vista exterior de MaxiHome"
+        style="width: 100%; max-height: 400px; object-fit: cover"
+      />
+    </section>
+
+    <!-- Contenido Principal -->
+    <main>
+      <!-- Sección de Introducción -->
+      <section id="introduccion">
+        <h1>Bienvenido a MaxiHome</h1>
+        <p>
+          En MaxiHome nos enorgullece ofrecerte una experiencia de compra
+          inigualable, en la que la calidad se une a precios competitivos para
+          satisfacer las necesidades de clientes particulares y empresas.
+          Nuestro supermercado se destaca por la amplia variedad de productos,
+          que abarcan desde materiales nobles hasta tecnología y artículos para
+          el hogar.
+        </p>
+        <p>
+          Con más de 25 años de experiencia en el mercado, hemos perfeccionado
+          nuestro servicio para brindarte un ambiente moderno, seguro y cómodo.
+          Cada detalle de nuestras instalaciones está diseñado para que tu
+          visita sea placentera, y nuestro compromiso con la excelencia se
+          refleja en la atención personalizada que ofrecemos a cada cliente.
+        </p>
+      </section>
+
+      <!-- Sección de Servicios -->
+      <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <p>
+          En MaxiHome, no solo encontrarás una amplia variedad de productos,
+          sino que también te ofrecemos múltiples servicios pensados para
+          facilitar tu experiencia de compra. Nuestro objetivo es convertir cada
+          visita en una experiencia satisfactoria y memorable.
+        </p>
+        <ul>
+          <li>
+            <strong>Compras al por mayor:</strong> Disfruta de precios
+            competitivos y descuentos exclusivos para grandes volúmenes de
+            compra.
+          </li>
+          <li>
+            <strong>Entrega a domicilio:</strong> Recibe tus productos en la
+            comodidad de tu hogar a través de nuestro eficiente servicio de
+            entrega.
+          </li>
+          <li>
+            <strong>Compra online:</strong> Nuestro portal web te permite
+            explorar y adquirir productos de forma segura y sencilla.
+          </li>
+          <li>
+            <strong>Atención personalizada:</strong> Contamos con un equipo de
+            profesionales dispuesto a asesorarte y resolver todas tus dudas.
+          </li>
+          <li>
+            <strong>Promociones y ofertas:</strong> Mantente al día con las
+            ofertas especiales y promociones que renovamos periódicamente.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Galería de Imágenes -->
+      <section id="inicio">
+        <!-- Carrusel de Vista Exterior -->
+        <div class="carrusel-container" id="exteriorCarousel">
+          <h3>Vista Exterior</h3>
+          <div class="carrusel">
+            <div class="slide active">
+              <img
+                src="imagenes/enterior1.jpg"
+                alt="Vista exterior 1 de MaxiHome"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="imagenes/exterior2.jpg"
+                alt="Vista exterior 2 de MaxiHome"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="imagenes/exterior3.jpg"
+                alt="Vista exterior 3 de MaxiHome"
+              />
+            </div>
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+
+        <!-- Carrusel de Vista Interior -->
+        <div class="carrusel-container" id="interiorCarousel">
+          <h3>Vista Interior</h3>
+          <div class="carrusel">
+            <div class="slide active">
+              <img
+                src="imagenes/interior1.jpg"
+                alt="Vista interior 1 de MaxiHome"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="imagenes/interior2.jpg"
+                alt="Vista interior 2 de MaxiHome"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="imagenes/interior 3.jpg"
+                alt="Vista interior 3 de MaxiHome"
+              />
+            </div>
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+      </section>
+
+      <!-- Video de Introducción -->
+      <section id="video-intro">
+        <h2>Video de Introducción</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/_3OobXetjs8?si=OEbEn9tuiBzVkyk5"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <!-- Audio de Fondo -->
+      <section id="audio-fondo">
+        <audio id="bgAudio" loop>
+          <source src="audio/GESHUOU(MP3_160K).mp3" type="audio/mpeg" />
+          Tu navegador no soporta audio.
+        </audio>
+        <button onclick="toggleAudio()">Activar/Desactivar Música</button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <section class="redes">
+          <a href="https://www.facebook.com/cotsco" target="_blank">
+            <i class="fab fa-facebook-f"></i> Facebook
+          </a>
+          <a href="https://www.instagram.com/cotsco" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://twitter.com/cotsco" target="_blank">
+            <i class="fab fa-twitter"></i> Twitter
+          </a>
+        </section>
+        <section class="informacion">
+          <p>Tel: (123) 456-7890</p>
+          <p>Email: contacto@MaxiHome.com</p>
+          <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+        </section>
+        <section class="politicas">
+          <a href="/paginas/privacidad.html">Políticas de Privacidad</a>
+          <a href="/paginas/terminos.html">Términos de Uso</a>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

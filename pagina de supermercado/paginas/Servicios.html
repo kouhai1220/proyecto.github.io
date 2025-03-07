@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MaxiHome - Servicios</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <script src="../js/login.js"></script>
+    <script src="../js/script.js"></script>
+    <header>
+      <div class="header-container">
+        <a href="../index.html">
+          <img src="../imagenes/logomaxi.png" alt="Logo de MaxiHome" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../paginas/Nosotros.html">Nosotros</a></li>
+            <li><a href="../paginas/Productos.html">Productos</a></li>
+            <li><a href="../paginas/Servicios.html"class="active">Servicios</a></li>
+            <li>
+              <a href="../paginas/Contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Contenedor de autenticación -->
+        <div id="authContainer">
+          <span id="userInfo"></span>
+          <a id="loginLink" href="../paginas/login.html">Iniciar Sesión</a>
+          <button id="logoutBtn" onclick="logout()" style="display: none">
+            Cerrar sesión
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="servicios-intro">
+        <h1>Servicios Adicionales</h1>
+        <p>
+          En MaxiHome queremos que tu experiencia de compra sea excepcional. Por
+          ello, además de ofrecerte una amplia gama de productos, hemos diseñado
+          servicios adicionales que facilitan y enriquecen tu experiencia.
+          Descubre a continuación cómo podemos ayudarte, ya sea recibiendo tus
+          productos en casa, aprovechando ofertas exclusivas o disfrutando de
+          una atención personalizada.
+        </p>
+      </section>
+
+      <!-- Servicio: Envío a Domicilio -->
+      <section id="envio-domicilio">
+        <h2>Envío a Domicilio</h2>
+        <p>
+          Nuestro servicio de envío a domicilio te permite recibir tus compras
+          de manera rápida y segura en la comodidad de tu hogar o negocio.
+        </p>
+        <div class="media-wrapper">
+          <div class="video-servicio">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/AGvfoL1_dN0?si=x3nEEiGi3YbwgTBA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <img src="../imagenes/servis1.jpg" alt="Envío a Domicilio" />
+        </div>
+        <div class="detalle-servicio">
+          <p>
+            Nuestro servicio de envío a domicilio está diseñado para adaptarse a
+            tus necesidades. Contamos con un sistema de seguimiento en tiempo
+            real, empaques seguros y opciones de entrega flexible. Nos
+            comprometemos a que cada producto llegue en perfectas condiciones y
+            en el menor tiempo posible, garantizando una experiencia sin
+            complicaciones desde tu compra hasta la entrega en tu puerta.
+          </p>
+        </div>
+      </section>
+
+      <!-- Servicio: Ofertas Especiales -->
+      <section id="ofertas-especiales">
+        <h2>Ofertas Especiales</h2>
+        <p>
+          Aprovecha nuestras promociones y descuentos exclusivos, diseñados para
+          ofrecerte siempre las mejores oportunidades de ahorro.
+        </p>
+        <div class="media-wrapper">
+          <div class="video-servicio">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/5jhxlxdWsiE?si=jQBdgB76AHsW9HPN"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <img src="../imagenes/servis2.jpg" alt="Ofertas Especiales" />
+        </div>
+        <div class="detalle-servicio">
+          <p>
+            Renovamos nuestras ofertas de forma periódica para que puedas
+            adquirir productos de alta calidad a precios inigualables. Nuestras
+            promociones están pensadas para cubrir las necesidades de todo tipo
+            de clientes, ya sea que compres al por mayor o de forma individual.
+            Descubre descuentos por temporada, promociones flash y beneficios
+            adicionales al ser parte de nuestro programa de fidelidad.
+          </p>
+        </div>
+      </section>
+
+      <!-- Servicio: Atención Personalizada -->
+      <section id="atencion-personalizada">
+        <h2>Atención Personalizada</h2>
+        <p>
+          Nuestro equipo de atención está siempre listo para asesorarte y
+          resolver cualquier duda, garantizando una experiencia cercana y
+          eficiente.
+        </p>
+        <div class="media-wrapper">
+          <div class="video-servicio">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/UD8fasxI4vs?si=fvoqVuQTWU1QUHjg"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <img src="../imagenes/servis3.jpg" alt="Atención Personalizada" />
+        </div>
+        <div class="detalle-servicio">
+          <p>
+            En MaxiHome valoramos cada consulta y comentario. Nuestro servicio
+            de atención personalizada te ofrece asesoramiento experto tanto en
+            la tienda como en línea. Disponemos de múltiples canales de
+            comunicación, incluyendo chat en vivo, asistencia telefónica y
+            correo electrónico, para que puedas obtener la ayuda que necesites
+            de forma rápida y eficaz. Nuestro compromiso es ofrecerte una
+            atención a la medida de tus expectativas.
+          </p>
+        </div>
+      </section>
+
+      <!-- Sección de Audio de Fondo (Opcional) -->
+      <section id="audio-servicios">
+        <audio id="bgAudioServicio" loop>
+          <source src="../audio/GESHUOU(MP3_160K).mp3" type="audio/mpeg" />
+          Tu navegador no soporta audio.
+        </audio>
+        <button onclick="toggleAudioServicio()">
+          Activar/Desactivar Música
+        </button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <section class="redes">
+          <a href="https://www.facebook.com/cotsco" target="_blank">
+            <i class="fab fa-facebook-f"></i> Facebook
+          </a>
+          <a href="https://www.instagram.com/cotsco" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://twitter.com/cotsco" target="_blank">
+            <i class="fab fa-twitter"></i> Twitter
+          </a>
+        </section>
+        <section class="informacion">
+          <p>Tel: (123) 456-7890</p>
+          <p>Email: contacto@MaxiHome.com</p>
+          <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+        </section>
+        <section class="politicas">
+          <a href="/paginas/privacidad.html">Políticas de Privacidad</a>
+          <a href="/paginas/terminos.html">Términos de Uso</a>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

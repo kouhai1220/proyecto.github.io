@@ -1,0 +1,339 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables de color */
+:root {
+  --primary-blue: #005daa;
+  --secondary-red: #e31837;
+  --light-gray: #f0f0f0;
+  --dark-gray: #333;
+}
+
+/* Estilos globales */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+  padding: 0 1rem; /* Espacio extra a los costados */
+}
+
+/* Header */
+header {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 1rem 0;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a img {
+  height: 150px; /* Logo aumentado */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: var(--secondary-red);
+}
+
+/* Main */
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem; /* Aumenta el espacio interno */
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* Secciones y tipografía */
+section {
+  margin-bottom: 2rem;
+}
+
+section h1,
+section h2,
+section h3 {
+  margin-bottom: 1rem;
+  color: var(--primary-blue);
+}
+
+section p {
+  margin-bottom: 1rem;
+}
+
+/* Tarjetas de productos */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.product-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: calc(33.333% - 1rem);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.product-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--primary-blue);
+}
+
+.product-card .precio {
+  font-weight: bold;
+  color: var(--secondary-red);
+  margin-bottom: 0.5rem;
+}
+
+/* Formularios */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 0.5rem 0 0.2rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+/* Botones */
+button {
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  max-width: 150px; /* Ancho reducido */
+}
+
+button:hover {
+  background-color: var(--secondary-red);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 1rem 0;
+}
+
+.footer-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-content section {
+  margin-bottom: 1rem;
+}
+
+.footer-content a {
+  color: white;
+  text-decoration: none;
+  margin-right: 0.5rem;
+  transition: text-decoration 0.3s ease;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+/* Modal para inicio de sesión/registro */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 1rem;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.modal-content .close {
+  color: #aaa;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-content .close:hover,
+.modal-content .close:focus {
+  color: var(--secondary-red);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-card {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+  }
+  .product-card {
+    width: 100%;
+  }
+}
+
+/* Carrusel */
+.carrusel-container {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carrusel {
+  display: flex;
+  position: relative;
+}
+
+.carrusel-container .slide {
+  display: none;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.carrusel-container .active {
+  display: block;
+}
+
+/* Botones del carrusel */
+.carrusel-container button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.carrusel-container button:hover {
+  opacity: 1;
+}
+
+.carrusel-container .prev {
+  left: 10px;
+}
+
+.carrusel-container .next {
+  right: 10px;
+}
+
+/* Estilos para la galería de equipo */
+.galeria-equipo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.galeria-equipo img {
+  width: 300px; /* Ajusta el ancho según lo que necesites */
+  height: 200px; /* Ajusta la altura para mantener una proporción uniforme */
+  object-fit: cover; /* Asegura que la imagen se recorte sin deformarse */
+  border-radius: 5px; /* Opcional, para redondear esquinas */
+}
+
+/* Contenedor para agrupar video e imagen */
+.media-wrapper {
+  display: flex;
+  align-items: flex-start; /* Alinea los elementos por la parte superior */
+  gap: 20px; /* Espacio entre el video y la imagen */
+  flex-wrap: wrap; /* Para que en pantallas pequeñas se ajusten */
+}
+
+/* Asegura que el video se adapte */
+.media-wrapper .video-servicio {
+  flex: 1;
+  min-width: 300px; /* Opcional: define un ancho mínimo */
+}
+
+/* Estilos para la imagen, estandarizando la altura y permitiendo ancho variable */
+.media-wrapper img {
+  height: 300px; /* Define la altura uniforme */
+  width: auto; /* El ancho se ajusta respetando la proporción original */
+  object-fit: cover; /* Recorta la imagen centrada si es necesario */
+  border-radius: 5px; /* Opcional: para redondear esquinas */
+}

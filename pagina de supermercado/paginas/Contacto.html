@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MaxiHome - Contacto</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <script src="../js/login.js"></script>
+    <script src="../js/script.js"></script>
+    <header>
+      <div class="header-container">
+        <a href="../index.html">
+          <img src="../imagenes/logomaxi.png" alt="Logo de MaxiHome" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../paginas/Nosotros.html">Nosotros</a></li>
+            <li><a href="../paginas/Productos.html">Productos</a></li>
+            <li><a href="../paginas/Servicios.html">Servicios</a></li>
+            <li>
+              <a href="../paginas/Contacto.html" class="active">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Contenedor de autenticación -->
+        <div id="authContainer">
+          <span id="userInfo"></span>
+          <a id="loginLink" href="../paginas/login.html">Iniciar Sesión</a>
+          <button id="logoutBtn" onclick="logout()" style="display: none">
+            Cerrar sesión
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Sección de Contacto -->
+      <section id="contacto">
+        <h1>Contáctanos</h1>
+        <p>
+          Si tienes consultas, comentarios o sugerencias, no dudes en enviarnos
+          un mensaje. Estamos aquí para ayudarte y brindarte la mejor atención.
+        </p>
+        <form id="formContacto" action="procesar_formulario.php" method="post">
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required />
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" />
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+
+      <!-- Sección de Mapa -->
+      <section id="mapa">
+        <h2>Encuéntranos</h2>
+        <p>
+          Visítanos en nuestra ubicación para conocer de cerca nuestros
+          productos y servicios.
+        </p>
+        <!-- Inserta aquí tu iframe de Google Maps con la ubicación deseada -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019080228149!2d-122.40137858468163!3d37.79361797975616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064cb9c9a33%3A0x16b5c7c2fcbf4d6!2sCostco%20Wholesale!5e0!3m2!1ses-419!2spe!4v1616174052614!5m2!1ses-419!2spe"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <section class="redes">
+          <a href="https://www.facebook.com/cotsco" target="_blank">
+            <i class="fab fa-facebook-f"></i> Facebook
+          </a>
+          <a href="https://www.instagram.com/cotsco" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://twitter.com/cotsco" target="_blank">
+            <i class="fab fa-twitter"></i> Twitter
+          </a>
+        </section>
+        <section class="informacion">
+          <p>Tel: (123) 456-7890</p>
+          <p>Email: contacto@MaxiHome.com</p>
+          <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+        </section>
+        <section class="politicas">
+          <a href="/paginas/privacidad.html">Políticas de Privacidad</a>
+          <a href="/paginas/terminos.html">Términos de Uso</a>
+        </section>
+      </div>
+    </footer>
+    <!-- Modal -->
+<div id="modalMensaje" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="modalTexto"></p>
+  </div>
+</div>
+
+<!-- Enlazar el script -->
+<script src="../js/formulario.js"></script>
+
+<style>
+  /* Estilos del modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15% auto;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  .close:hover {
+    color: black;
+  }
+</style>
+
+  
+  </body>
+</html>
