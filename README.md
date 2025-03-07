@@ -1,4 +1,4 @@
-├── FINAL\pagina de supermercado
+├── pagina de supermercado
 ├── audio
 ├── css
 ├── imagenes
